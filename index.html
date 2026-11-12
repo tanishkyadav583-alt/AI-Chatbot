@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit AI | Chat Workspace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-mark">O</div>
+                <div>
+                    <h2>Orbit AI</h2>
+                    <span>Your thinking space</span>
+                </div>
+            </div>
+
+            <button id="newChat" class="new-chat">
+                <span>＋</span> Start a new chat
+            </button>
+
+            <div class="history-heading">
+                <h3>RECENT CONVERSATIONS</h3>
+            </div>
+
+            <div id="historyList" class="history-list"></div>
+
+            <div class="side-bottom">
+                <span class="status-dot"></span>
+                Powered by Gemini AI
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <header>
+                <div class="header-title">
+                    <span class="eyebrow">WORKSPACE</span>
+                    <h2>Conversation</h2>
+                </div>
+
+                <button id="clearChat" class="clear-button">
+                    <span>↺</span> Clear conversation
+                </button>
+            </header>
+
+            <section id="chatBox" class="chat-box">
+                <div class="welcome">
+                    <div class="welcome-icon">✦</div>
+                    <span class="eyebrow">WELCOME TO ORBIT</span>
+                    <h1>Ideas start here.</h1>
+                    <p>Ask a question, explore an idea, or get help with something new.</p>
+                </div>
+            </section>
+
+            <div class="composer-wrap">
+                <div class="input-area">
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Message Orbit AI..."
+                        autocomplete="off"
+                    >
+
+                    <button id="sendBtn">➤</button>
+                </div>
+
+                <p class="disclaimer">
+                    Orbit AI may make mistakes. Verify important information.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
